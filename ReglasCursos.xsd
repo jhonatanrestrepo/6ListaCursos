@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ListaCursos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="curso" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="alumno" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dni" type="xs:ID"/>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="primerApellido" type="xs:string"/>
+                                        <xs:element name="segundoApellido" type="xs:string"/>
+                                        <xs:element name="listaAsignaturas" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="asignatura" type="xs:ID"/>
+                                                    <xs:element name="profesor" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nrp" type="xs:ID"/>
+                                                                <xs:element name="nombre" type="xs:string"/>
+                                                                <xs:element name="primerApellido" type="xs:string"/>
+                                                                <xs:element name="segundoApellido" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="codigo" type="xs:ID" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

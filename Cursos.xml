@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding = "UTF-8" standalone="no" ?>
+<!DOCTYPE ListaCursos SYSTEM "ReglasCursos.dtd">
+<ListaCursos>
+    <curso>
+        <alumno>
+            <dni>10009304090</dni>
+            <nombre>Jhonatan</nombre>
+            <primerApellido>Restrepo</primerApellido>
+            <listaAsignaturas>
+                <asignatura codigo="CES3123">
+                    <nombre>CES 3</nombre>
+                    <profesor>
+                        <nrp>101010</nrp>
+                        <nombre>Roger</nombre>
+                        <primerApellido>Eliecer</primerApellido>
+                        <segundoApellido>Marulanda</segundoApellido>
+                    </profesor>
+                </asignatura>
+            </listaAsignaturas>
+        </alumno>
+    </curso>
+</ListaCursos>
